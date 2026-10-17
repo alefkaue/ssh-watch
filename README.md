@@ -1,5 +1,7 @@
 # ssh-watch
 
+[![Tests](https://github.com/alefkaue/ssh-watch/actions/workflows/tests.yml/badge.svg)](https://github.com/alefkaue/ssh-watch/actions/workflows/tests.yml)
+
 Detecção de força bruta SSH em logs. Projeto independente de portfólio voltado a **SOC / detecção e triagem**.
 
 Processa linhas de OpenSSH com timestamp ISO 8601 e fuso horário (formato RFC3339).
@@ -17,6 +19,8 @@ python ssh_watch.py examples/auth.log --threshold 3
 ```
 
 As ferramentas escrevem JSON em stdout. Use `--help` para consultar opções. Exemplos são sintéticos e não contêm dados reais.
+
+O exemplo produz dois achados para `192.0.2.10`: `ssh_failure_burst` na terceira falha e `ssh_success_after_failures` no login seguinte. O código de saída é **1**, indicando achados, não falha da execução. Com `--threshold 4`, o mesmo exemplo não gera alerta.
 
 ## Testes
 
