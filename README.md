@@ -1,5 +1,7 @@
 # ssh-watch
 
+**Área do portfólio:** [Cybersecurity](https://github.com/alefkaue#cybersecurity) · **Contexto:** Projeto pessoal
+
 [![Tests](https://github.com/alefkaue/ssh-watch/actions/workflows/tests.yml/badge.svg)](https://github.com/alefkaue/ssh-watch/actions/workflows/tests.yml)
 
 Detecção de força bruta SSH em logs. Projeto independente de portfólio voltado a **SOC / detecção e triagem**.
